@@ -1,11 +1,11 @@
 
-#include <SPI.h>
-#include <MFRC522.h>
+#include <SPI.h>   // RFID library
+#include <MFRC522.h>  //RFID library
 
-#define Buzzer 7 
-#define Relay 8
+#define Buzzer 7    //Buzzer connected to ground (-) and pin 7 (+), not neccessary for project
+#define Relay 8  //Relay pin if necessary for project
 #define SS_PIN 53
-#define RST_PIN 49
+#define RST_PIN 49  //Reset pin
 MFRC522 mfrc522(SS_PIN, RST_PIN);   // Create MFRC522 instance.
  
 void setup() 
@@ -50,9 +50,9 @@ void loop()
   delay(50);
   content.toUpperCase();
   
-  if (content.substring(1) == "91 40 26 2F")
+  if (content.substring(1) == "91 40 26 2F")  // depends on card number
   {
-    digitalWrite(Buzzer, HIGH);
+    digitalWrite(Buzzer, HIGH); //buzzer on for 100s
     delay(100);
     digitalWrite(Buzzer, LOW);
     delay(50);
