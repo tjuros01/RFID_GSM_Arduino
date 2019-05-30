@@ -1,4 +1,17 @@
 RFID MFRC522 and GSM SIM800L
 
-- microcontroller: Arduino Mega 
+- microcontroller: Arduino Mega 2560
+
+This project include RFID MFRC522, GSM SIM 800L, buzzer 5V and relay. This can be useful for class attendance, opening and closing doors or lids and so on.
+
+IMPORTANT:
+
+If you need only RFID (with or without buzzer) use file RFID_MFRC522.ino.
+If you need only GSM use file GSM_SIM800L.ino.
+If you need RFID and GSM combined, use file RFID_GSM.ino.
+
+Useful links for begginers:
+
+https://randomnerdtutorials.com/security-access-using-mfrc522-rfid-reader-with-arduino/
+https://www.youtube.com/watch?v=KQiVLEhzzV0
 
